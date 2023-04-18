@@ -14,10 +14,18 @@
   padding: 15px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
 }
 
 .btn--border {
   border: 3px solid #0779FF;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #242F40;
 }
 
 .btn--border:hover {
@@ -31,4 +39,16 @@
 
 .btn--blue:hover {
   background-color: transparent;
+}
+
+@media screen and (max-width: 1560px) {
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn {
+    font-size: 16px;
+  }
 }

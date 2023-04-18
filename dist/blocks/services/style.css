@@ -1,0 +1,111 @@
+.services__title {
+  margin-bottom: 84px;
+}
+
+.services__items {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 84px;
+  margin-bottom: 45px;
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 2px rgba(7, 121, 255, 0.22);
+          box-shadow: 0px 0px 2px rgba(7, 121, 255, 0.22);
+  border-radius: 50px;
+  position: relative;
+  padding-top: 73px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 66px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 343px;
+}
+
+.services-item__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -34px;
+  left: 25px;
+  width: 90px;
+  height: 90px;
+}
+
+.services-item__icon img,
+.services-item__icon svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services-item__title {
+  font-family: PlayfairDisplay, sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  color: #242F40;
+  margin-bottom: 15px;
+}
+
+.services-item__text {
+  font-size: 20px;
+  line-height: 23px;
+  color: #242F40;
+}
+
+.services__button {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1560px) {
+  .services-item__title {
+    font-size: 26px;
+  }
+
+  .services-item__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services-item__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .services-item__title {
+    font-size: 24px;
+  }
+
+  .services-item__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services__items {
+    margin-bottom: 30px;
+  }
+}

@@ -10,10 +10,26 @@
   border-radius: 20px;
   padding: 15px 20px;
   box-sizing: border-box;
+  width: fit-content;
+  white-space: nowrap;
 
+  @media screen and (max-width: 1560px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 576px) {
+  }
 
   &--border {
     border: 3px solid $blue;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    color: #242F40;
 
     &:hover {
       background-color: $blue;

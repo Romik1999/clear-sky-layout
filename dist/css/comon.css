@@ -57,9 +57,10 @@ main {
 }
 
 .section-title {
+  font-family: PlayfairDisplay, sans-serif;
   font-weight: 900;
   font-size: 48px;
-  line-height: 64px;
+  line-height: 130%;
   color: #0779FF;
   margin-top: 0;
   margin-bottom: 30px;
@@ -70,13 +71,27 @@ input:focus-visible {
   outline: 2px solid blue;
 }
 
+@media screen and (max-width: 1560px) {
+  .section-title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 950px) {
   section {
     padding: 30px 15px;
   }
+}
 
+@media screen and (max-width: 576px) {
   .section-title {
-    font-size: 24px;
-    text-align: center;
+    font-size: 32px;
   }
 }

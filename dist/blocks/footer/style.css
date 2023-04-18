@@ -1,6 +1,8 @@
 .footer {
   width: 100%;
   padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer__wrapper {
@@ -201,7 +203,7 @@
 
 @media screen and (max-width: 810px) {
   .footer {
-    padding: 5px 15px;
+    padding: 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
