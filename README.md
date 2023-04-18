@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align="center">OKB Bulat</h1>
+    <h1 align="center">Чистое небо</h1>
 </p>
 
 DIRECTORY MAIN STRUCTURE
