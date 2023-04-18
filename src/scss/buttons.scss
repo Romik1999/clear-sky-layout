@@ -1,0 +1,31 @@
+@import "./colors";
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+
+
+  &--border {
+    border: 3px solid $blue;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+    border: 3px solid $blue;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

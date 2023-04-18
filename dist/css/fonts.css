@@ -1,0 +1,63 @@
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Italic.woff2") format("woff2"), url("../fonts/Raleway-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-BlackItalic.woff2") format("woff2"), url("../fonts/Raleway-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
