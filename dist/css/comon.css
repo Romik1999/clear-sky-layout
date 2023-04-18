@@ -63,7 +63,7 @@ main {
   line-height: 130%;
   color: #0779FF;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 input:focus,
@@ -81,6 +81,7 @@ input:focus-visible {
   .section-title {
     font-size: 36px;
     text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -93,5 +94,6 @@ input:focus-visible {
 @media screen and (max-width: 576px) {
   .section-title {
     font-size: 32px;
+    margin-bottom: 30px;
   }
 }

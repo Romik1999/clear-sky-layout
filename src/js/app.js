@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const popularSlider = new Swiper('.popular-slider', {
+    const specialists = new Swiper('.specialists-slider', {
         slidesPerView: 3,
-        loop: true,
+        loop: false,
+        spaceBetween: 20,
         navigation: {
-            nextEl: '.popular-slider__arrow--next',
-            prevEl: '.popular-slider__arrow--prev',
+            nextEl: '.specialists-slider__arrow--next',
+            prevEl: '.specialists-slider__arrow--prev',
         },
         breakpoints: {
             300: {
@@ -14,75 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
             575: {
                 slidesPerView: "auto"
             },
-            1200: {
+            1370: {
                 slidesPerView: 3,
             },
         }
     });
 
-    const news = new Swiper('.news-slider', {
-        slidesPerView: 3,
-        loop: false,
-        allowTouchMove: false,
-        spaceBetween: 20,
-        breakpoints: {
-            300: {
-                slidesPerView: 1,
-                allowTouchMove: true,
-            },
-            575: {
-                slidesPerView: "auto",
-                allowTouchMove: true,
-            },
-            1200: {
-                slidesPerView: 3,
-                allowTouchMove: false,
-            },
-        }
-    });
-
-    const otherSlider = new Swiper('.other-slider', {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-            nextEl: '.other-slider__arrow--next',
-            prevEl: '.other-slider__arrow--prev',
-        },
-        breakpoints: {
-            300: {
-                slidesPerView: 1,
-            },
-            575: {
-                slidesPerView: "auto"
-            },
-            1200: {
-                slidesPerView: 3,
-            },
-        }
-    });
-
-
-    const readSlider = new Swiper('.read-slider', {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-            nextEl: '.read-slider__arrow--next',
-            prevEl: '.read-slider__arrow--prev',
-        },
-        breakpoints: {
-            300: {
-                slidesPerView: 1,
-            },
-            575: {
-                slidesPerView: "auto"
-            },
-            1200: {
-                slidesPerView: 3,
-            },
-        }
-    });
 
     let burger = document.querySelector('.hamburger');
     let mobile = document.querySelector('.mobile');
