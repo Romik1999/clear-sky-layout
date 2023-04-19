@@ -47,6 +47,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const reviews = new Swiper('.reviews-slider', {
+        slidesPerView: 3,
+        loop: false,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.reviews-slider__arrow--next',
+            prevEl: '.reviews-slider__arrow--prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: "auto"
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
     let burger = document.querySelector('.hamburger');
     let mobile = document.querySelector('.mobile');
     burger.addEventListener('click', () => {
