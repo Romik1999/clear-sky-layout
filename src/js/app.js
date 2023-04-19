@@ -21,6 +21,31 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const gallery = new Swiper('.gallery-slider', {
+        slidesPerView: 3,
+        loop: false,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.gallery-slider__arrow--next',
+            prevEl: '.gallery-slider__arrow--prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
+            },
+            575: {
+                slidesPerView: "auto"
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        }
+    });
 
     let burger = document.querySelector('.hamburger');
     let mobile = document.querySelector('.mobile');

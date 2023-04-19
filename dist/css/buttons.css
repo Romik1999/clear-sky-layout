@@ -18,6 +18,9 @@
   width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .btn--border {
@@ -30,6 +33,7 @@
 
 .btn--border:hover {
   background-color: #0779FF;
+  color: #ffffff;
 }
 
 .btn--blue {
