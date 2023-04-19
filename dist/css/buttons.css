@@ -21,13 +21,13 @@
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .btn--border {
   border: 3px solid #0779FF;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 23px;
   color: #242F40;
 }
 
@@ -39,10 +39,12 @@
 .btn--blue {
   background-color: #0779FF;
   border: 3px solid #0779FF;
+  color: #ffffff;
 }
 
 .btn--blue:hover {
   background-color: transparent;
+  color: #0779FF;
 }
 
 @media screen and (max-width: 1560px) {

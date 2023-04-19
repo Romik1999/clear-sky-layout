@@ -13,6 +13,9 @@
   width: fit-content;
   white-space: nowrap;
   transition: 0.2s;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
 
   @media screen and (max-width: 1560px) {
     font-size: 18px;
@@ -27,9 +30,6 @@
 
   &--border {
     border: 3px solid $blue;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
     color: #242F40;
 
     &:hover {
@@ -41,9 +41,11 @@
   &--blue {
     background-color: $blue;
     border: 3px solid $blue;
+    color: $white;
 
     &:hover {
       background-color: transparent;
+      color: $blue;
     }
   }
 }
