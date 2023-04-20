@@ -69,6 +69,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+
+    let questions = document.querySelectorAll('.questions-item__title')
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.nextSibling.nextSibling.classList.toggle('active');
+        })
+    })
+
+
     let burger = document.querySelector('.hamburger');
     let mobile = document.querySelector('.mobile');
     burger.addEventListener('click', () => {
