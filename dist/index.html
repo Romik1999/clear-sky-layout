@@ -45,7 +45,7 @@
             </div>
             <div class="header__actions">
                 <a class="header__phone" href="tel:88005503063">8 (800) 550-30-63</a>
-                <div class="header__callback">заказать звонок</div>
+                <div class="header__callback" data-modal>заказать звонок</div>
             </div>
             <div class="header__hamburger">
                 <div class="hamburger">
@@ -115,7 +115,7 @@
                     </ul>
                 </div>
                 <div class="hero__bottom">
-                    <button class="hero__button btn btn--border">Бесплатная консультация</button>
+                    <button class="hero__button btn btn--border" data-modal>Бесплатная консультация</button>
                     <div class="hero__notice">анонимно</div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                     расстройствами, анорексией, булимией, психозами, депрессией, тревожным состояниями а также рядом
                     других сопутствующих заболеваний.
                 </div>
-                <a class="about__button btn btn--border" href="#">Бесплатная консультация психолога</a>
+                <button class="about__button btn btn--border" data-modal>Бесплатная консультация психолога</button>
             </div>
         </div>
         <div class="about__advantages">
@@ -265,7 +265,7 @@
                 </div>
             </div>
         </div>
-        <a class="services__button btn btn--border" href="#">Бесплатная консультация</a>
+        <button class="services__button btn btn--border" data-modal>Бесплатная консультация</button>
     </div>
 </section>
     <section class="specialists section">
@@ -533,7 +533,7 @@
             <div class="feedback__title">Остались вопросы и сомнения?</div>
             <div class="feedback__subtitle">Позвоните нам и мы поможем в решении вашей проблемы!</div>
             <a class="feedback__phone" href="tel:8 (800) 550-30-63">8 (800) 550-30-63</a>
-            <button class="feedback__button btn btn--blue">Заказать звонок</button>
+            <button class="feedback__button btn btn--blue" data-modal>Заказать звонок</button>
         </div>
     </div>
 </section>
@@ -796,138 +796,95 @@
     </div>
 </footer>
 <div class="modal">
-    <div class="modal__inner">
-        <div class="cont">
-            <div class="modal__wrapper">
-                <img src="./img/modal/close.png" alt="close" class="modal__close">
-                <div class="modal__info">
-                    <div class="modal-info">
-                        <div class="modal-info__items">
-                            <div class="modal-info__item">
-                                <div class="modal-info__icon">
-                                    <img class="modal-info__img" src="./img/modal/icon-1.svg" alt="icon-1">
-                                </div>
-                                <div class="modal-info__text">
-                                    <div class="modal-info__title">Актуальная информация</div>
-                                    <p class="modal-info__desc">
-                                        Предоставим вам бесплатную подборку самых выгодных актуальных
-                                        предложений на рынке по займам, кредитам, страхованиям, курсам валют.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal-info__item">
-                                <div class="modal-info__icon">
-                                    <img class="modal-info__img" src="./img/modal/icon-2.svg" alt="icon-2">
-                                </div>
-                                <div class="modal-info__text">
-                                    <div class="modal-info__title">Подберем кредит</div>
-                                    <p class="modal-info__desc">
-                                        Проанализируем данные о вашем кредитном рейтинге и посоветуем выгодные
-                                        предложения
-                                        по кредитам, кредитным картам и кредитным организациям.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal-info__item">
-                                <div class="modal-info__icon">
-                                    <img class="modal-info__img" src="./img/modal/icon-3.svg" alt="icon-3">
-                                </div>
-                                <div class="modal-info__text">
-                                    <div class="modal-info__title">Выгодный займ</div>
-                                    <p class="modal-info__desc">
-                                        Предоставим вам на выбор лучшие МФО и специально для вас найдем подходящий займ
-                                        под выгодный процент, поможем оформить онлайн
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal-info__item">
-                                <div class="modal-info__icon">
-                                    <img class="modal-info__img" src="./img/modal/icon-4.svg" alt="icon-4">
-                                </div>
-                                <div class="modal-info__text">
-                                    <div class="modal-info__title">Калькулятор ипотеки</div>
-                                    <p class="modal-info__desc">
-                                        Найдем выгодные решения для оформления ипотеки на самых доступных условиях и
-                                        бесплатно рассчитаем процентную ставку и ежемесячный платеж
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+    <div class="cont">
+        <div class="modal__wrapper">
+            <div class="modal__inner">
+                <img src="./img/close.svg" alt="close" class="modal__close">
+                <div class="modal__title">Заказать обратный звонок</div>
+                <div class="modal__subtitle">Для того, чтобы оператор с Вами связался, оставьте ваши данные</div>
+                <form action="#" id="modalMain" class="modal__form">
+                    <div class="modal__fields">
+                        <label class="modal__field">
+                            <input placeholder="Ваше имя" id="name" type="text" class="modal__input">
+                        </label>
+                        <label class="modal__field">
+                            <input placeholder="Ваш телефон" id="tel" type="text" class="modal__input"
+                                   onkeypress="maskPhone(event)"
+                                   onpaste="onPastePhone(event)">
+                        </label>
                     </div>
-                </div>
-                <div class="modal__content">
-                    <div class="modal-content">
-                        <div class="modal-content__triggers">
-                            <div class="modal-triggers">
-                                <div class="modal-triggers__item modal-triggers__item--active" data-tabs-path="auth">
-                                    Авторизация
-                                </div>
-                                <div class="modal-triggers__item" data-tabs-path="register">Регистрация</div>
-                            </div>
-                        </div>
-                        <div class="modal-content__forms">
-                            <div class="modal-content__form modal-content__form--active" data-tabs-target="auth">
-                                <div class="modal-form__message">Неверный логин или пароль</div>
-                                <form name="loginform" class="modal-form" id="loginform"
-                                      action="<?php bloginfo('url') ?>/wp-login.php" method="post">
-                                    <label class="modal-form__label">
-                                        <span class="modal-form__text">Логин</span>
-                                        <input class="modal-form__input" type="text" name="log" id="user_login"/>
-                                    </label>
-                                    <label class="modal-form__label">
-                                        <span class="modal-form__text">Пароль</span>
-                                        <input class="modal-form__input" type="password" name="pwd" id="user_pass"/>
-                                    </label>
-                                    <label class="modal-form__checkbox">
-                                        <input class="modal-form__checkbox-input" name="rememberme" type="checkbox"
-                                               id="rememberme" value="forever"/>
-                                        <span class="modal-form__checkbox-icon"></span>
-                                        <span class="modal-form__checkbox-text">Запомнить меня</span>
-                                    </label>
-                                    <input type="submit" class="modal-form__submit" name="wp-submit"
-                                           id="wp-submit-login"
-                                           value="Войти"/>
-                                    <input type="hidden" name="redirect_to"
-                                           value="<?= site_url($_SERVER['REQUEST_URI']) ?>"/>
-                                    <input type="hidden" name="testcookie" value="1"/>
-                                </form>
-                            </div>
-                            <div class="modal-content__form" data-tabs-target="register">
-                                <form id="registerform" class="modal-form"
-                                      action="<?= esc_url( wp_registration_url() ) ?>"
-                                      method="post">
-                                    <label class="modal-form__label" for="user_login">
-                                        <span class="modal-form__text">Имя пользователя</span>
-                                        <input type="text" name="user_login" id="user_login" class="modal-form__input"
-                                               value=""
-                                               size="20"
-                                               style="">
-                                    </label>
-                                    <label class="modal-form__label" for="user_email">
-                                        <span class="modal-form__text">E-mail</span>
-                                        <input type="email" name="user_email" id="user_email" class="modal-form__input"
-                                               value=""
-                                               size="25">
-                                    </label>
-
-                                    <div class="modal-form__text">Подтверждение регистрации будет отправлено на ваш
-                                        e-mail.
-                                    </div>
-
-                                    <br class="clear">
-                                    <input type="hidden" name="redirect_to"
-                                           value="<?= site_url($_SERVER['REQUEST_URI']) ?>">
-                                    <input type="submit" name="wp-submit" id="wp-submit-reg" class="modal-form__submit"
-                                           value="Регистрация">
-                                </form>
-                            </div>
-                        </div>
+                    <button class="btn btn--blue modal__button">Заказть звонок</button>
+                    <div class="modal__notice">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function maskPhone(e) {
+        const mask = /\+7 \(\d{3}\) \d{3} \d{2} \d{2}/;
+        var valSize = e.target.value.trim().replace(/\D/g, "").length;
+        e = e || window.event;
+        var key = e.keyCode || e.which;
+        key = String.fromCharCode(key);
+        var regex = /[0-9]|\+/;
+        if (!regex.test(key)) {
+            e.returnValue = false;
+            if (e.preventDefault) e.preventDefault();
+        } else {
+            if (valSize !== 0 && key === "+") {
+                e.returnValue = false;
+                return;
+            }
+            if (valSize === 0) {
+                if (key === "8" || key === "7") {
+                    e.target.value = "+7";
+                    e.returnValue = false;
+                } else if (key === "9") {
+                    e.target.value = "+7 (9";
+                    e.returnValue = false;
+                } else if (key !== "+") {
+                    e.target.value = "+7 (9";
+                } else if (key === "+" && e.target.value === "+") {
+                    e.returnValue = false;
+                }
+            } else if (valSize === 1) {
+                e.target.value = "+7 (9";
+                if (key === "9") {
+                    e.returnValue = false;
+                }
+            } else if (valSize === 4) {
+                if (e.target.value.slice(-1) === ")") {
+                    e.target.value = e.target.value.trim() + " ";
+                } else if (e.target.value.slice(-1) === " ") {
+                    return;
+                } else e.target.value = e.target.value.trim() + ") ";
+            } else if (valSize === 7 || valSize === 9) {
+                if (e.target.value.slice(-1) === " ") {
+                    return;
+                } else e.target.value = e.target.value.trim() + " ";
+            } else if (valSize === 11) {
+                e.returnValue = false;
+            }
+        }
+    }
+
+    function onPastePhone(e) {
+        e.preventDefault();
+        const mask = /(7|8)(9\d{2})(\d{3})(\d{2})(\d{2})/;
+        var phone = e.clipboardData.getData('text/plain').replace(/\D/g, "");
+        if (!mask.test(phone)) {
+            e.returnValue = false;
+            return;
+        }
+        var matched = phone.match(mask);
+        e.target.value = "+7 (" + matched[2] + ") " + matched[3] + " " + matched[4] + " " + matched[5];
+        e.returnValue = false;
+    }
+</script>
 
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>

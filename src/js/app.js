@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-// функция для модалки
+    // функция для модалки
 
     function calcScroll() {
         let div = document.createElement('div');
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    modal('.modal', 'modal--active', '[data-modal-auth]', '.modal__close');
+    modal('.modal', 'modal--active', '[data-modal]', '.modal__close');
 
 // Accordion
     const tabs = document.querySelector('.modal-content');
