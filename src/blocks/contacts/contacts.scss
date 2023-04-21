@@ -1,0 +1,78 @@
+@import "src/scss/colors.scss";
+
+.contacts {
+
+
+  @media screen and (max-width: 1560px) {
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 45px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__map {
+    max-width: 65%;
+    width: 100%;
+    height: 340px;
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 250px;
+    }
+  }
+
+  &-item {
+    &__title {
+      font-family: PlayfairDisplay, sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 120%;
+      color: #242F40;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 22px;
+      }
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 120%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #242F40;
+      text-decoration: none;
+      display: block;
+
+      @media screen and (max-width: 992px) {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
