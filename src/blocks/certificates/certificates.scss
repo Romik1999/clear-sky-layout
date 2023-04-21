@@ -1,0 +1,41 @@
+@import "src/scss/colors.scss";
+
+.certificates {
+  &-slider {
+    &__item {
+      width: auto !important;
+    }
+
+    &__items {
+      margin-bottom: 30px;
+    }
+
+    &__arrows {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 30px;
+    }
+
+    &__arrow {
+      display: flex;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+  }
+
+  &-item {
+    height: 275px;
+
+    @media screen and (max-width: 576px) {
+      height: 240px;
+    }
+
+    & img,
+    & svg {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+  }
+}

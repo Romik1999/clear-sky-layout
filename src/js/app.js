@@ -168,4 +168,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('modal-content__form--active');
     };
+
+
+
+    const certificates = new Swiper('.certificates-slider', {
+        slidesPerView: "auto",
+        loop: false,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.certificates-slider__arrow--next',
+            prevEl: '.certificates-slider__arrow--prev',
+        },
+    });
 });
