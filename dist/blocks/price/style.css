@@ -1,0 +1,141 @@
+.price__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__img {
+  max-width: 34%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price__img img,
+.price__img svg {
+  width: 100%;
+  height: auto;
+}
+
+.price__table {
+  max-width: 64%;
+  width: 100%;
+}
+
+.price-table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.price-table__row:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.price-table__title {
+  font-size: 28px;
+  line-height: 33px;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #242F40;
+  max-width: 650px;
+  width: 100%;
+}
+
+.price-table__text {
+  font-family: PlayfairDisplay, sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #242F40;
+}
+
+@media screen and (max-width: 1560px) {
+  .price__img {
+    max-width: 30%;
+  }
+
+  .price__table {
+    max-width: 70%;
+  }
+
+  .price-table__title {
+    font-size: 26px;
+    max-width: 500px;
+  }
+
+  .price-table__text {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .price__img {
+    display: none;
+  }
+
+  .price__table {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .price-table__row:not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  .price-table__title {
+    font-size: 24px;
+    max-width: 60%;
+  }
+
+  .price-table__text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .price-table__row:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .price-table__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 5px;
+  }
+
+  .price-table__title {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .price-table__title {
+    font-size: 22px;
+  }
+
+  .price-table__text {
+    font-size: 22px;
+  }
+}
