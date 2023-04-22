@@ -47,6 +47,47 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const services = new Swiper('.services-slider', {
+        slidesPerView: 3,
+        loop: false,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.services-slider__arrow--next',
+            prevEl: '.services-slider__arrow--prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
+            },
+            575: {
+                slidesPerView: "auto",
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
+            },
+            992: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
+            },
+            1199: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
+            },
+        }
+    });
+
     const reviews = new Swiper('.reviews-slider', {
         slidesPerView: 3,
         loop: false,

@@ -1033,21 +1033,36 @@ input:focus-visible {
   margin-bottom: 84px;
 }
 
-.services__items {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 84px;
+.services__slider {
   margin-bottom: 45px;
 }
 
-.services__item {
+.services-slider__items {
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.services-slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 34px;
+  height: unset;
+}
+
+.services-slider__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .services-item {
@@ -1070,6 +1085,7 @@ input:focus-visible {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 343px;
+  height: 100%;
 }
 
 .services-item__icon {
@@ -1108,6 +1124,8 @@ input:focus-visible {
 
 .services__button {
   margin: 0 auto;
+  max-width: 385px;
+  width: 100%;
 }
 
 .specialists__text {
@@ -2040,6 +2058,16 @@ input:focus-visible {
     font-size: 16px;
   }
 
+  .services-slider__item {
+    height: calc((100% - 20px) / 2) !important;
+    max-width: 520px !important;
+  }
+
+  .services-item {
+    min-height: 290px;
+    padding-bottom: 30px;
+  }
+
   .services-item__icon {
     width: 80px;
     height: 80px;
@@ -2276,6 +2304,11 @@ input:focus-visible {
     padding-bottom: 50px;
   }
 
+  .services-slider__item {
+    height: unset !important;
+    max-width: 450px !important;
+  }
+
   .gallery-slider__item {
     max-width: 400px !important;
   }
@@ -2434,8 +2467,13 @@ input:focus-visible {
     row-gap: 25px;
   }
 
-  .services__items {
+  .services__slider {
     margin-bottom: 30px;
+  }
+
+  .services-slider__item {
+    height: unset !important;
+    max-width: 100% !important;
   }
 
   .specialists-item {
