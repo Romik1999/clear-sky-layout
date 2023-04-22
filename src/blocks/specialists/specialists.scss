@@ -20,6 +20,10 @@
       font-size: 16px;
       text-align: center;
     }
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 30px;
+    }
   }
 
   &-item {
@@ -36,6 +40,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 130px;
     }
 
     &__img {
@@ -54,7 +59,8 @@
       }
 
       @media screen and (max-width: 576px) {
-        position: unset;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
 
@@ -131,6 +137,13 @@
 
     &__item {
       padding-top: 40px;
+
+      @media screen and (max-width: 1370px) {
+        max-width: 440px !important;
+      }
+      @media screen and (max-width: 576px) {
+        max-width: 100% !important;
+      }
     }
 
     &__arrows {
