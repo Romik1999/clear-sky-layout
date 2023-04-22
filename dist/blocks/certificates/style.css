@@ -29,6 +29,13 @@
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width: 100px;
+  height: auto;
+}
+
+.certificates-slider__arrow svg {
+  width: 100%;
+  height: auto;
 }
 
 .certificates-item {
@@ -43,7 +50,17 @@
      object-fit: cover;
 }
 
+@media screen and (max-width: 992px) {
+  .certificates-slider__arrow {
+    width: 80px;
+  }
+}
+
 @media screen and (max-width: 576px) {
+  .certificates-slider__arrow {
+    width: 60px;
+  }
+
   .certificates-item {
     height: 240px;
   }

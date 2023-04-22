@@ -1476,6 +1476,13 @@ input:focus-visible {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width: 100px;
+  height: auto;
+}
+
+.certificates-slider__arrow svg {
+  width: 100%;
+  height: auto;
 }
 
 .certificates-item {
@@ -2182,6 +2189,10 @@ input:focus-visible {
     font-size: 36px;
   }
 
+  .certificates-slider__arrow {
+    width: 80px;
+  }
+
   .questions__items {
     max-width: 100%;
   }
@@ -2619,6 +2630,10 @@ input:focus-visible {
 
   .feedback__button {
     max-width: 100%;
+  }
+
+  .certificates-slider__arrow {
+    width: 60px;
   }
 
   .certificates-item {
