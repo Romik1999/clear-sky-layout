@@ -32,6 +32,13 @@
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width: 100px;
+  height: auto;
+}
+
+.reviews-slider__arrow svg {
+  width: 100%;
+  height: auto;
 }
 
 .reviews-item {
@@ -67,6 +74,10 @@
     max-width: 520px !important;
   }
 
+  .reviews-slider__arrow {
+    width: 80px;
+  }
+
   .reviews-item__title {
     font-size: 24px;
   }
@@ -85,6 +96,10 @@
 @media screen and (max-width: 576px) {
   .reviews-slider__item {
     max-width: 100% !important;
+  }
+
+  .reviews-slider__arrow {
+    width: 60px;
   }
 
   .reviews-item__title {

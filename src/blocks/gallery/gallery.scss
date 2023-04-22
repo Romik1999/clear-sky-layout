@@ -54,6 +54,22 @@
       display: flex;
       cursor: pointer;
       transition: 0.2s;
+
+      width: 100px;
+      height: auto;
+
+      @media screen and (max-width: 992px) {
+        width: 80px;
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 60px;
+      }
+
+      & svg{
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

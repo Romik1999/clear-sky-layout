@@ -43,11 +43,22 @@
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width: 100px;
+  height: auto;
+}
+
+.gallery-slider__arrow svg {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 992px) {
   .gallery-slider__item {
     max-width: 520px !important;
+  }
+
+  .gallery-slider__arrow {
+    width: 80px;
   }
 }
 
@@ -66,5 +77,9 @@
   .gallery-slider__item img,
   .gallery-slider__item svg {
     max-height: 60vw;
+  }
+
+  .gallery-slider__arrow {
+    width: 60px;
   }
 }
