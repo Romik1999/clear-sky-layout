@@ -2308,6 +2308,11 @@ input:focus-visible {
     margin-bottom: 30px;
   }
 
+  .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .footer__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2348,6 +2353,10 @@ input:focus-visible {
 
   .hero__text {
     font-size: 16px;
+  }
+
+  .hero__bottom {
+    max-width: 100%;
   }
 
   .hero__notice {
