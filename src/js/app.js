@@ -1,4 +1,40 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    let burger = document.querySelector('.hamburger');
+    let mobile = document.querySelector('.mobile');
+    burger.addEventListener('click', () => {
+        if (burger.classList.contains('active')) {
+            burger.classList.remove('active');
+            mobile.classList.remove('active');
+            document.body.style.overflow = "visible";
+        } else {
+            burger.classList.add('active');
+            mobile.classList.add('active');
+            document.body.style.overflow = "hidden";
+        }
+    });
+
+    let hrefs = document.querySelectorAll('.js-scroller')
+    hrefs.forEach(href => {
+        href.addEventListener('click', (e) => {
+            e.preventDefault();
+            let id = e.target.getAttribute('href').slice(1)
+            let scrollTarget = document.getElementById(id);
+            let topOffset = document.querySelector('.header').offsetHeight;
+            let elementPosition = scrollTarget.getBoundingClientRect().top;
+            let offsetPosition = elementPosition - topOffset;
+            if (mobile) {
+                mobile.classList.remove('active')
+                burger.classList.remove('active')
+                document.body.style.overflow = "visible"
+            }
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        })
+    });
+
     const specialists = new Swiper('.specialists-slider', {
         slidesPerView: 3,
         loop: false,
@@ -120,20 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
-    let burger = document.querySelector('.hamburger');
-    let mobile = document.querySelector('.mobile');
-    burger.addEventListener('click', () => {
-        if (burger.classList.contains('active')) {
-            burger.classList.remove('active');
-            mobile.classList.remove('active');
-            document.body.style.overflow = "visible";
-        } else {
-            burger.classList.add('active');
-            mobile.classList.add('active');
-            document.body.style.overflow = "hidden";
-        }
-    });
-
     // функция для модалки
 
     function calcScroll() {
@@ -209,7 +231,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('modal-content__form--active');
     };
-
 
 
     const certificates = new Swiper('.certificates-slider', {
