@@ -147,6 +147,10 @@
     font-size: 16px;
   }
 
+  .hero__bottom {
+    max-width: 100%;
+  }
+
   .hero__notice {
     font-size: 16px;
   }
