@@ -30,7 +30,6 @@
       padding-top: 34px;
       height: unset;
 
-
       @media screen and (max-width: 992px) {
         height: calc((100% - 20px)/ 2)!important;
         max-width: 520px!important;
@@ -46,10 +45,14 @@
     }
 
     &__arrows{
-      display: flex;
       align-items: center;
       justify-content: space-between;
       column-gap: 20px;
+      display: none;
+
+      @media screen and (max-width: 1199px) {
+        display: flex;
+      }
     }
 
     &__arrow {
