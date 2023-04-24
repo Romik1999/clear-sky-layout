@@ -1743,10 +1743,6 @@ input:focus-visible {
     font-size: 18px;
   }
 
-  .header__logo {
-    max-width: 136px;
-  }
-
   .header-menu__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1934,10 +1930,6 @@ input:focus-visible {
 
   .header {
     padding: 20px 15px;
-  }
-
-  .header__logo {
-    max-width: 105px;
   }
 
   .header-menu__items {

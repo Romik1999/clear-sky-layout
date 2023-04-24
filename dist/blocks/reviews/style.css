@@ -69,6 +69,12 @@
   color: #242F40;
 }
 
+@media screen and (max-width: 1560px) {
+  .reviews-item__text {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .reviews-slider__item {
     max-width: 520px !important;
@@ -80,10 +86,6 @@
 
   .reviews-item__title {
     font-size: 24px;
-  }
-
-  .reviews-item__text {
-    font-size: 18px;
   }
 }
 

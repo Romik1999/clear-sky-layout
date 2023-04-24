@@ -31,14 +31,14 @@
     display: flex;
     max-width: 152px;
 
-    @media screen and (max-width: 1560px) {
-      max-width: 136px;
-    }
-
-    @media screen and (max-width: 992px) {
-      max-width: 105px;
-    }
-
+    //@media screen and (max-width: 1560px) {
+    //  max-width: 136px;
+    //}
+    //
+    //@media screen and (max-width: 992px) {
+    //  max-width: 105px;
+    //}
+    //
     & img,
     & svg {
       width: 100%;

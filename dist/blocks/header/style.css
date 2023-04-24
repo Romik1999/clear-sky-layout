@@ -302,10 +302,6 @@
 }
 
 @media screen and (max-width: 1560px) {
-  .header__logo {
-    max-width: 136px;
-  }
-
   .header-menu__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -337,10 +333,6 @@
 @media screen and (max-width: 992px) {
   .header {
     padding: 20px 15px;
-  }
-
-  .header__logo {
-    max-width: 105px;
   }
 
   .header-menu__items {
