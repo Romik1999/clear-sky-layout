@@ -321,6 +321,11 @@ input:focus-visible {
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
   color: #252F40;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .hamburger {
